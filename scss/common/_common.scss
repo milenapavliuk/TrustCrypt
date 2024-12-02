@@ -1,0 +1,28 @@
+ul{
+    list-style: none;
+    padding: 0;
+}
+body{
+box-sizing: border-box;
+font-family: Inter;
+font-style: normal;
+line-height: normal;
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+h1, h2, h3, h4, p{
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.wrapper{
+    background: url(/images/bg.avif) no-repeat center/cover;
+}
+.blur{
+    backdrop-filter: blur(5px);
+}

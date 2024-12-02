@@ -12,6 +12,7 @@
 </head>
 <body>
     <div class="wrapper">
+    <div class="blur">
         <div class="container">
             <header class="header">
                 <div class="header-item">
@@ -20,7 +21,7 @@
                 <div class="header-item">
                     <nav class="nav">
                         <ul class="nav-list">
-                            <li class="nav-list-item"><a href="/pages/index.html" class="nav-link">Home</a></li>
+                            <li class="nav-list-item nav-list-item-current"><a href="/pages/index.html" class="nav-link">Home</a></li>
                             <li class="nav-list-item"><a href="/pages/products.html" class="nav-link">Products</a></li>
                             <li class="nav-list-item"><a href="/pages/blog.html" class="nav-link">Blog</a></li>
                             <li class="nav-list-item"><a href="#" class="nav-link">Contacts</a></li>
@@ -28,28 +29,116 @@
                     </nav>
                     <div class="lang">
                         <select class="lang-dropdown" name="lang">
-                            <option class="lang-dropdown-option" value="en">EN</option>
-                            <option class="lang-dropdown-option" value="ua">UA</option>
-                            <option class="lang-dropdown-option" value="ru">RU</option>
+                            <option class="lang-dropdown-option" value="en">
+                                <svg width="20" height="20"><use href="/images/symboldefts.svg#en"></use></svg>
+                                EN</option>
+                            <option class="lang-dropdown-option" value="ua">
+                                <svg width="20" height="20"><use href="/images/symboldefts.svg#ua"></use></svg>
+                                UA</option>
+                            <option class="lang-dropdown-option" value="ru">
+                                <svg width="20" height="20"><use href="/images/symboldefts.svg#ru"></use></svg>
+                                RU</option>
                         </select>
                     </div>
                     <div class="social">
-                        <img src="/images/symboldefts.svg#tg" alt="telegram" class="social-link">
-                        <img src="/images/symboldefts.svg#twt" alt="twitter" class="social-link">
-                        <img src="/images/symboldefts.svg#yt" alt="youtube" class="social-link">
-                        <img src="/images/symboldefts.svg#wa" alt="whatsapp" class="social-link">
+                        <svg class="social-link" width="24" height="24"><use href="/images/symboldefts.svg#tg"></use></svg>
+                        <svg class="social-link" width="24" height="24"><use href="/images/symboldefts.svg#twt"></use></svg>
+                        <svg class="social-link" width="24" height="24"><use href="/images/symboldefts.svg#yt"></use></svg>
+                        <svg class="social-link" width="24" height="24"><use href="/images/symboldefts.svg#wa"></use></svg>
                     </div>
                 </div>
             </header>
             <main class="main">
-                <div class="gallery"></div>
-                <div class="instuments"></div>
-                <div class="contact-us"></div>
+                <div class="gallery">
+                    <div class="gallery-card">
+                        <div class="gallery-card-data">
+                            <h1 class="gallery-card-data-title">Advanced cybersecurity for any company</h1>
+                            <p class="gallery-card-data-desc">Protect your business from all kinds of cyber threats with world-class solutions</p>
+                            <button class="gallery-card-data-btn">Details</button>
+                        </div>
+                        <img src="/images/main1.avif" alt="" class="gallery-card-img">
+                    </div>
+                    <div class="gallery-card">
+                        <div class="carousel">
+                            <div class="carousel-images">
+                                <img src="/images/main2.avif" alt="Image1">
+                                <img src="/images/main2.avif" alt="Image2">
+                                <img src="/images/main2.avif" alt="Image3">
+                            </div>
+                            <div class="carousel-buttons">
+                                <button class="carousel-button" id="prev">‹</button>
+                                <button class="carousel-button" id="next">›</button>
+                            </div>
+                        </div>
+                        <div class="gallery-card-data">
+                            <h1 class="gallery-card-data-title">Next-generation cybersecurity</h1>
+                            <p class="gallery-card-data-desc">Scalable protection against the most advanced cyber threats tailored to your business needs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="instuments">
+                    <h1 class="instuments-title">Instuments</h1>
+                    <p class="instuments-desc">Penetration testing allows you to answer the question of how someone with malicious intent can interfere with your network</p>
+                    <div class="instuments-clients">
+                        <svg class="instuments-clients-logos" width="225" height="48"><use href="/images/symboldefts.svg#client"></use></svg>
+                        <svg class="instuments-clients-logos" width="225" height="48"><use href="/images/symboldefts.svg#client"></use></svg>
+                        <svg class="instuments-clients-logos" width="225" height="48"><use href="/images/symboldefts.svg#client"></use></svg>
+                        <svg class="instuments-clients-logos" width="225" height="48"><use href="/images/symboldefts.svg#client"></use></svg>
+                    </div>
+                </div>
+                <div class="security">
+                    <h1 class="security-title">Our products are aimed at your safety</h1>
+                    <p class="security-desc">We adhere to a simple principle in our work: detect and block any malicious attack</p>
+                    <div class="security-pros">
+                        <div class="security-pros-item">
+                            <svg class="security-pros-img" width="100" height="100"><use href="/images/symboldefts.svg#anon"></use></svg>
+                            <p class="security-pros-desc">Anonymity</p>
+                        </div>
+                        <div class="security-pros-item">
+                            <svg class="security-pros-img" width="100" height="100"><use href="/images/symboldefts.svg#check"></use></svg>
+                            <p class="security-pros-desc">Scan for threats</p>
+                        </div>
+                        <div class="security-pros-item">
+                            <svg class="security-pros-img" width="100" height="100"><use href="/images/symboldefts.svg#protect"></use></svg>
+                            <p class="security-pros-desc">Attack Detection and Prevention</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-us">
+                    <h1 class="contact-us-title">Contact us in any way You want</h1>
+                    <form action="" class="contact-us-form">
+                        <input type="text" class="contact-us-form-input" placeholder="How we can call You?">
+                        <input type="text" class="contact-us-form-input" placeholder="Which company do You represent?">
+                        <input type="email" class="contact-us-form-input" placeholder="Email adress">
+                        <textarea class="contact-us-form-area" rows="3" placeholder="Enter your message"></textarea>
+                        <label class="contact-us-form-switch">
+                            <input class="form-switch" type="checkbox">
+                            <span class="slider"></span>
+                            I agree to the processing of personal data
+                        </label>
+                        
+                        <button type="submit" class="contact-us-form-btn">Send data</button>
+                    </form>
+                    <div class="contact-us-info">
+                        <a href="" class="contact-us-info-link">
+                            <svg width="24" height="24"><use href="/images/symboldefts.svg#adress"></use></svg>
+                            Wells Fargo Center, 999 3rd Ave #1000, Seattle, WA 98104, USA</a>
+                        <a href="tel:+380981234567" class="contact-us-info-link">
+                        <svg width="24" height="24"><use href="/images/symboldefts.svg#tel"></use></svg>
+                            +38 (098) 123 - 45 - 67</a>
+                        <a href="mailto:admin@trustcrypt.com" class="contact-us-info-link">
+                            <svg width="24" height="24"><use href="/images/symboldefts.svg#mail"></use></svg>
+                            admin@trustcrypt.com</a>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4581.53280430822!2d-122.3357658935251!3d47.605244787599695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ab0ffe05c93%3A0xfb1cf384520dd691!2sWells%20Fargo%20Center%2C%20999%203rd%20Ave%2C%20Seattle%2C%20WA%2098104%2C%20%D0%A1%D0%A8%D0%90!5e1!3m2!1sru!2sua!4v1733165875757!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </main>
             <footer class="footer">
         <p class="footer-text">© 2022 LLC Trustcrypt. All rights reserved.</p>
     </footer>
         </div>
-    </div>    
+    </div>
+    </div>
+    <script src="/js/script.js"></script> 
 </body>
 </html>
