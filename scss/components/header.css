@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.header-item {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-item {
+  width: 723px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  width: 359px;
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=header.css.map */

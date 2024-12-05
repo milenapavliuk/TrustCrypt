@@ -1,9 +1,90 @@
-@im .contact-us-form-switch {
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Inter;
+  font-style: normal;
+  line-height: normal;
+  color: white;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.wrapper {
+  background: url(/images/bg.avif) no-repeat center/cover;
+}
+
+.blur {
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+symbol {
+  fill: white;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+  width: 100%;
+}
+
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carousel-button {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.contact-us-form-switch {
   position: relative;
   display: inline-block;
   width: 40px;
   height: 20px;
 }
+
 .form-switch {
   opacity: 0;
   width: 0;
@@ -35,15 +116,36 @@
   border-radius: 50%;
 }
 
-input:checked + .slider {
-  background-color: #0FAE96;
-  opacity: 100%;
+.form-switch:checked + .slider {
+  background-color: #ecf1f0;
 }
 
-input:focus + .slider {
+.form-switch:focus + .slider {
   box-shadow: 0 0 1px white;
 }
 
-input:checked + .slider:before {
+.form-switch:checked + .slider:before {
   transform: translateX(20px);
+}
+
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.header-item {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+  color: #d4d4d4;
 }/*# sourceMappingURL=main.css.map */
